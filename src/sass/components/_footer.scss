@@ -1,4 +1,39 @@
 .footer{
-    background-color: black;
-    color: #fff;
+    background-color: #070A1B;
+    font-family: 'Roboto Condensed';
+    height: 300px;
+    display: flex;
+    align-items: center;
+
+    &__link{
+        a{
+            color: #fff;
+        cursor: pointer;
+        }
+    }
+
+    &__logo{
+        cursor: pointer;
+    }
+
+    &__nav{
+        ul{
+            display: flex;
+            :nth-child(2){
+                margin-left: 30px;
+            }
+            :nth-child(3){
+                margin-left: 30px;
+            }
+            li{
+                a{
+                    &:hover img{
+                        background-color: #C1A1D2;
+                        border-radius: 50%;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,29 @@
+.concept{
+    background-color: #070A1B;
+    font-family: 'Roboto Condensed';
+    padding-top: 150px;
+    &__container{
+        max-width: 900px;
+        margin-left: auto;
+        .concept__title{
+            margin-bottom: 25px;
+            h3{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 120%;
+                color: #F402A2;
+                text-transform: uppercase;
+            }
+        }
+
+        .concept__description{
+            margin-bottom: 25px;
+            p{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

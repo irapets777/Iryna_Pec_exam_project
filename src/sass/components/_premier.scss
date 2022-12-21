@@ -1,0 +1,25 @@
+.premier{
+    background-color: #070A1B;
+    font-family: 'Roboto Condensed';
+    padding-top: 150px;
+    &__title{
+        padding-bottom: 25px;
+        h3{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 120%;
+            color: #F402A2;
+            text-transform: uppercase;
+        }
+    }
+
+    &__description{
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: #FFFFFF;
+            padding-bottom: 20px;
+        }
+    }
+}
