@@ -2,24 +2,70 @@
     background-color: #070A1B;
     font-family: 'Roboto Condensed';
     padding-top: 150px;
-    &__title{
-        padding-bottom: 25px;
-        h3{
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 120%;
-            color: #F402A2;
-            text-transform: uppercase;
-        }
-    }
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        .premier__column{
+            width: 100%;
+            .premier__title{
+                padding-bottom: 25px;
+                h3{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #F402A2;
+                    text-transform: uppercase;
+                }
+            }
 
-    &__description{
-        p{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 120%;
-            color: #FFFFFF;
-            padding-bottom: 20px;
+            .premier__description{
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                    padding-bottom: 28px; 
+                }
+            }
+
+            .premier__img{
+                padding-bottom: 25px;
+            }
+
+            button{
+                display: block;
+                width: 100%;
+                text-transform: uppercase;
+                font-size: 18px;
+                line-height: 120%;
+                color: #F402A2;
+                text-align: center;
+                padding: 14px;
+                border: 1px solid #F402A2;
+                background-color: #070A1B;
+            }
+
         }
     }
+    // &__title{
+    //     padding-bottom: 25px;
+    //     h3{
+    //         font-weight: 700;
+    //         font-size: 18px;
+    //         line-height: 120%;
+    //         color: #F402A2;
+    //         text-transform: uppercase;
+    //     }
+    // }
+
+    // &__description{
+    //     p{
+    //         font-weight: 400;
+    //         font-size: 16px;
+    //         line-height: 120%;
+    //         color: #FFFFFF;
+    //         padding-bottom: 20px;
+    //     }
+    // }
 }
