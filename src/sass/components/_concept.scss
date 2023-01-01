@@ -25,5 +25,13 @@
                 color: #FFFFFF;
             }
         }
+
+        .concept__img{
+            display: flex;
+            img{
+                flex: auto;
+                width: 100%;
+            }
+        }
     }
 }
