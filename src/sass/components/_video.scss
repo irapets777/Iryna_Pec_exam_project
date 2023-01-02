@@ -1,0 +1,33 @@
+.video{
+    background-color: #070A1B;
+    font-family: 'Roboto Condensed';
+    padding: 150px 0;
+    img{
+        padding-bottom: 25px;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 120%;
+        color: #F402A2;
+        padding: 14px;
+        border: 1px solid #F402A2;
+        background-color: #070A1B;
+        transition: all .3s;
+        &:hover{
+            color: #53A1CB;
+            border: 1px solid #53A1CB;
+            transition: 0.3s;
+        }
+
+        &:hover path{
+            fill: #53A1CB;
+            transition: 0.3s;
+        }
+    }
+}

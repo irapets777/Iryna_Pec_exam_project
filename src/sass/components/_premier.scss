@@ -51,9 +51,11 @@
                 padding: 14px;
                 border: 1px solid #F402A2;
                 background-color: #070A1B;
+                transition: 0.3s;
                 &:hover{
                     color: #53A1CB;
                     border: 1px solid #53A1CB;
+                    transition: 0.3s;
                 }
             }
 
