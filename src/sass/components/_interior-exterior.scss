@@ -5,64 +5,74 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    .container{
-        max-width: 1296px;
-        margin: 0 auto;
-        padding: 0 12px;
 
-        .design__interior{
-            display: grid;
-            grid-template-columns: 255px 255px auto 330px;
-            grid-template-rows: auto auto;
-            gap: 14px 44px;
-    
-            .design__column{
-                .design__title{
-                    padding-bottom: 25px;
-                    h3{
-                        font-weight: 700;
-                        font-size: 18px;
-                        line-height: 120%;
-                        color: #F402A2;
-                        text-transform: uppercase;
-                    }
-                }
-    
-                &.one{
-                 grid-row: 1/4;
-                 p{
-                    padding-bottom: 30px;
-                 }
-                }
+    &__interior{
+        display: flex;
+        padding-bottom: 100px;
+        .interior__title{
+            padding-bottom: 25px;
+            h3{
+                font-weight: 700;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 120%;
+                color: #F402A2;
+                text-transform: uppercase; 
+            }
+        }
 
-                &.two{
-                    grid-column: 2/-1;
-                    img{
-                        max-width: 100%;
-                    }
-                    
-               
-                }
-    
-                &.three{
-                    grid-row-end: -1;
-                    display: flex;
-                    align-items: flex-end;
-                }
-    
-                &.four{
-                    grid-row-end: -1;
-                    grid-column-end: -1;
-                    display: flex;
-                    align-items: flex-end;
-                }
+        .interior__describe{
+            p{
+                padding: 0 44px 30px 0;
+            }
+        }
+
+        .interior__img{
+            padding-bottom: 90px;
+            img{
+                flex: auto;
+                width: 100%;
+                max-height: 450px;
+            }
+        }
+
+        .interior__text{
+            width: 30%;
+            // padding-right: 100px;
+        }
+
+        img{
+            display: flex;
+            flex: auto;
+            width: 100%;
+            max-height: 205px;
+        }
+    }
+
+    .design__slider{
+        padding-bottom: 25px;
+        .slider__img{
+            margin: 0 18px;
+            max-width: 360px;
+        }
+
+        .slick-track{
+           margin: 0 -50px;
+        }
+
+        .arrow{
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            bottom: 0;
+            left: 50%;
+            &.left{
+                transform: translateX(-70px);
+            }
+
+            &.right{
+                transform: translateX(30px);
             }
         }
     }
-   
-
-
 }
-
-
-    
