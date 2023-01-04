@@ -38,7 +38,6 @@
 
         .interior__text{
             width: 30%;
-            // padding-right: 100px;
         }
 
         img{
@@ -75,4 +74,29 @@
             }
         }
     }
+
+    .design__text{
+        padding: 150px 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 60px;
+
+        p{
+            width: 50%;
+            display: flex;
+        }
+
+        .text_left{
+        margin-left: auto;
+        }
+    }
+
+    .design__exterior{
+        img{
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
 }
+

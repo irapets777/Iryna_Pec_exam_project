@@ -24,6 +24,9 @@
             }
             li{
                 a{
+                    img{
+                      padding: 4px;
+                    }
                     &:hover img{
                         background-color: #C1A1D2;
                         border-radius: 50%;
