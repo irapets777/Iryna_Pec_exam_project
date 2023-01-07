@@ -4,19 +4,38 @@
     height: 300px;
     display: flex;
     align-items: center;
+   
 
-    &__link{
-        a{
-            color: #fff;
-        cursor: pointer;
+    &__mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width:768px){
+            flex-direction: column-reverse;
         }
-    }
 
-    &__logo{
-        cursor: pointer;
-    }
+        .footer__link{
+            a{
+                color: #fff;
+                cursor: pointer;
+            }
 
-    &__nav{
+            @media screen and (max-width:768px){
+                margin-top: 20px;
+            }
+        }
+
+        .footer__logo{
+            cursor: pointer;
+
+            @media screen and (max-width:768px){
+                margin-top: 20px;
+            }
+        }
+
+
+    .footer__nav{
         ul{
             display: flex;
             :nth-child(2){
@@ -35,5 +54,6 @@
                 }
             }
         }
+    }
     }
 }
