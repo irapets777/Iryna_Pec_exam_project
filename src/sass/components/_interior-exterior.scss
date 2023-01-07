@@ -8,7 +8,13 @@
 
     &__interior{
         display: flex;
+        flex-wrap: wrap;
         padding-bottom: 100px;
+        @media screen and (max-width:992px){
+            flex-direction: column;
+            align-items: center;
+        
+        }
         .interior__title{
             padding-bottom: 25px;
             h3{
@@ -24,6 +30,9 @@
         .interior__describe{
             p{
                 padding: 0 44px 30px 0;
+                @media screen and (max-width:992px){
+                    padding: 15px 0;
+                }
             }
         }
 
@@ -34,18 +43,37 @@
                 width: 100%;
                 max-height: 450px;
             }
+
+            @media screen and (max-width:992px){
+                padding-bottom: 40px;
+            }
         }
 
-        .interior__text{
-            width: 30%;
-        }
-
-        img{
+        .block__interior{
             display: flex;
-            flex: auto;
-            width: 100%;
-            max-height: 205px;
+            justify-content: space-between;
+            .interior__text{
+                width: 30%;
+                @media screen and (max-width:992px){
+                  width: 100%;
+                  padding-bottom: 40px;
+                }
+            }
+    
+            img{
+                display: flex;
+                flex: auto;
+                width: 100%;
+                max-height: 205px;
+            }
+
+            @media screen and (max-width:992px){
+                flex-direction: column;
+                align-items: center;
+            }
         }
+
+       
     }
 
     .design__slider{

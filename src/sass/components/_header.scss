@@ -5,8 +5,80 @@
     display: flex;
     align-items: center;
 
+    
+
     &__burger{
-        cursor: pointer;
+        #burger{
+            opacity: 0;
+        }
+        #burger:checked ~ .burger__menu{
+            visibility: visible;
+            left: 0;
+        }
+
+        .burger{
+            cursor: pointer;
+        }
+        
+        .burger__menu{
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 10;
+            left: -100%;
+            z-index: 1;
+            background: rgb(86,2,142);
+            background: radial-gradient(circle, rgba(86,2,142,1) 0%, rgba(157,19,226,0.21332282913165268) 68%, rgba(222,12,236,1) 100%);
+            width: 20%;
+            height: 300px;
+            padding: 10px;
+            border-radius: 20%;
+            
+            .menu__nav{
+                padding-top: 30px;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    li{
+                        padding: 5px 0;
+                        a{
+                            color: #F402A2;
+                            cursor: pointer;
+                        }
+                        &:hover{
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            .menu__social{
+                padding-top: 30px;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    :nth-child(2){
+                        margin-left: 30px;
+                    }
+                    :nth-child(3){
+                        margin-left: 30px;
+                    }
+                    li{
+                        a{
+                            img{
+                              padding: 4px;
+                            }
+                            &:hover img{
+                                background-color: #C1A1D2;
+                                border-radius: 50%;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__logo{
