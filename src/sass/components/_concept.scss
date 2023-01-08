@@ -2,6 +2,9 @@
     background-color: #070A1B;
     font-family: 'Roboto Condensed';
     padding-top: 150px;
+    @media screen and (max-width:992px){
+        padding-top: 100px;
+    }
     &__container{
         max-width: 900px;
         margin-left: auto;
@@ -13,6 +16,9 @@
                 line-height: 120%;
                 color: #F402A2;
                 text-transform: uppercase;
+                @media screen and (max-width:992px){
+                    font-size: 24px;
+                }
             }
         }
 
@@ -23,6 +29,9 @@
                 font-size: 24px;
                 line-height: 120%;
                 color: #FFFFFF;
+                @media screen and (max-width:768px){
+                    font-size: 18px;
+                }
             }
         }
 

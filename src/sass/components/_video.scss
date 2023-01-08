@@ -2,6 +2,9 @@
     background-color: #070A1B;
     font-family: 'Roboto Condensed';
     padding: 150px 0;
+    @media screen and (max-width:992px){
+        padding: 80px 0;
+    }
     img{
         padding-bottom: 25px;
     }
