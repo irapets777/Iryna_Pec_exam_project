@@ -1,9 +1,12 @@
 .video{
-    background-color: #070A1B;
-    font-family: 'Roboto Condensed';
+    background-color: $var1;
+    font-family: $var6;
     padding: 150px 0;
     @media screen and (max-width:992px){
         padding: 80px 0;
+    }
+    @media screen and (max-width:768px){
+        padding: 50px 0;
     }
     img{
         padding-bottom: 25px;
@@ -17,18 +20,18 @@
         text-transform: uppercase;
         font-size: 18px;
         line-height: 120%;
-        color: #F402A2;
+        color: $var2;
         padding: 14px;
-        border: 1px solid #F402A2;
-        background-color: #070A1B;
+        border: 1px solid $var2;
+        background-color: $var1;
         transition: all .3s;
         &:hover{
-            color: #53A1CB;
-            border: 1px solid #53A1CB;
+            color: $var5;
+            border: 1px solid $var5;
         }
 
         &:hover path{
-            fill: #53A1CB;
+            fill: $var5;
         }
     }
 }

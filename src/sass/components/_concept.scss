@@ -1,9 +1,12 @@
 .concept{
-    background-color: #070A1B;
-    font-family: 'Roboto Condensed';
+    background-color: $var1;
+    font-family: $var6;
     padding-top: 150px;
     @media screen and (max-width:992px){
         padding-top: 100px;
+    }
+    @media screen and (max-width:768px){
+        padding-top: 50px;
     }
     &__container{
         max-width: 900px;
@@ -14,7 +17,7 @@
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 120%;
-                color: #F402A2;
+                color: $var2;
                 text-transform: uppercase;
                 @media screen and (max-width:992px){
                     font-size: 24px;
@@ -28,9 +31,12 @@
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 120%;
-                color: #FFFFFF;
+                color: $var4;
                 @media screen and (max-width:768px){
                     font-size: 18px;
+                }
+                @media screen and (max-width:600px){
+                    font-size: 14px;
                 }
             }
         }

@@ -1,9 +1,12 @@
 .footer{
-    background-color: #070A1B;
-    font-family: 'Roboto Condensed';
+    background-color: $var1;
+    font-family: $var6;
     height: 300px;
     display: flex;
     align-items: center;
+    @media screen and (max-width:768px){
+        height: 200px;
+    }
    
 
     &__mobile{
@@ -17,7 +20,7 @@
 
         .footer__link{
             a{
-                color: #fff;
+                color: $var4;
                 cursor: pointer;
             }
 
@@ -28,6 +31,12 @@
 
         .footer__logo{
             cursor: pointer;
+            img{
+                @media screen and (max-width:800px){
+                    width: 180px;
+                    height: 20px;
+                }
+            }
 
             @media screen and (max-width:768px){
                 margin-top: 20px;
@@ -50,7 +59,7 @@
                         padding: 4px;
                     }
                     &:hover img{
-                        background-color: #C1A1D2;
+                        background-color: $var3;
                         border-radius: 50%;
                         transition: 0.4s;
                     }

@@ -1,7 +1,7 @@
 .design{
     background: linear-gradient(180deg, #070A1B 0%, #2A3170 100%);
-    color: #fff;
-    font-family: 'Roboto Condensed';
+    color: $var4;
+    font-family: $var6;
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -13,16 +13,21 @@
         @media screen and (max-width:992px){
             flex-direction: column;
             align-items: center;
-        
+        }
+        @media screen and (max-width:768px){
+            padding-bottom: 50px;
         }
         .interior__title{
             padding-bottom: 25px;
+            @media screen and (max-width:768px){
+                padding-bottom: 10px;
+            }
             h3{
                 font-weight: 700;
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 120%;
-                color: #F402A2;
+                color: $var2;
                 text-transform: uppercase; 
                 @media screen and (max-width:992px){
                     font-size: 24px;
@@ -38,6 +43,10 @@
                     font-size: 18px;
                     line-height: 120%;
                 }
+                @media screen and (max-width:600px){
+                    font-size: 14px;
+                    padding: 10px 0;
+                }
             }
         }
 
@@ -50,7 +59,10 @@
             }
 
             @media screen and (max-width:992px){
-                padding-bottom: 40px;
+                padding: 40px 0;
+            }
+            @media screen and (max-width:768px){
+                padding: 20px 0;
             }
         }
 
@@ -64,6 +76,9 @@
                   padding-bottom: 40px;
                   font-size: 18px;
                   line-height: 120%;
+                }
+                @media screen and (max-width:600px){
+                    font-size: 14px;
                 }
             }
     
@@ -127,13 +142,17 @@
             @media screen and (max-width: 800px){
                width: 100%;
             }
+            @media screen and (max-width:600px){
+                font-size: 14px;
+            }
+        }
+            
         }
 
         .text_left{
         margin-left: auto;
-        @media screen and (max-width: 800px){
+            @media screen and (max-width: 800px){
             margin-left: 0;
-        }
         }
     }
 
