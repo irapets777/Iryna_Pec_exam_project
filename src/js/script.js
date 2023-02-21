@@ -1,3 +1,15 @@
+const humb = document.querySelector('#burger-icon');
+const humbBody = document.querySelector('#burger-menu');
+
+
+humb.addEventListener('click', humbHandler);
+function humbHandler(e) {
+   e.preventDefault();
+   humbBody.classList.toggle("open");
+   humb.classList.toggle('active');
+}
+
+
 let slider = $(document).ready(function () {
   $('.design__slider').slick({
     slidesToShow: 4,
