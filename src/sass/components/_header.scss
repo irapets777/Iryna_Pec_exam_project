@@ -1,34 +1,43 @@
 .header {
+    position: sticky;
+    top: 0;
     background-color: $var1;
     font-family: $var6;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
 
     &__burger {
         .menu__btn {
+            cursor: pointer;
+
             &.active span {
                 background-color: transparent;
+
                 &::before {
                     transform: translateY(10px) rotate(45deg);
                     transition: all 0.3s ease 0s;
                 }
+
                 &::after {
                     transform: translateY(-10px) rotate(-45deg);
                     transition: all 0.3s ease 0s;
                 }
             }
-            &.active {
-                position: fixed;
-            }
+
             position: fixed;
-            top: 10px;
-            left: 10px;
-            z-index: 30;
+            top: 25px;
+            left: 70px;
+            z-index: 100;
             width: 50px;
             height: 50px;
             overflow: hidden;
+            @media screen and (max-width:900px) {
+                left: 10px;
+            }
+
             span {
                 top: 50%;
                 left: 50%;
@@ -39,9 +48,13 @@
             span::before,
             span::after {
                 position: absolute;
-                width: 20px;
-                height: 4px;
+                width: 40px;
+                height: 2px;
                 background-color: $var4;
+                @media screen and (max-width:900px) {
+                    width: 30px;
+                    height: 1px;
+                }
             }
 
             span::before {
@@ -57,35 +70,24 @@
         }
 
         .burger__menu {
+            display: none;
+
             &.open {
                 display: block;
                 position: fixed;
                 top: 0;
                 left: 0;
                 z-index: 1;
-                background: rgb(86,2,142);
-                background: radial-gradient(circle, rgba(86,2,142,1) 0%, rgba(157,19,226,0.21332282913165268) 68%, rgba(222,12,236,1) 100%);
-                width: 50%;
+                background: rgb(86, 2, 142);
+                background: radial-gradient(circle, rgba(86, 2, 142, 1) 0%, rgba(157, 19, 226, 0.21332282913165268) 68%, rgba(222, 12, 236, 1) 100%);
+                border-radius: 0 40px 40px 0;
+                width: 40%;
                 height: 100vh;
                 padding: 10px;
             }
-           
-            @media screen and (max-width:992px){
-                width: 30%;
-            }
-            @media screen and (max-width:700px){
-                width: 40%;
-            }
-            @media screen and (max-width:500px){
-                width: 50%;
-            }
-            @media screen and (max-width:400px){
-                width: 60%;
-            }
-
 
             .menu__nav {
-                padding-top: 320px;
+                margin-top: 90px;
 
                 ul {
                     display: flex;
@@ -93,13 +95,33 @@
                     flex-direction: column;
 
                     li {
-                        margin: 5px 0;
+                        margin: 20px 0;
 
                         a {
                             color: $var2;
                             cursor: pointer;
-                            font-size: 20px;
+                            font-size: 32px;
                             font-weight: 600;
+
+                            @media screen and (max-width:992px) {
+                                font-size: 30px;
+                                font-weight: 600;
+                            }
+
+                            @media screen and (max-width:700px) {
+                                font-size: 24px;
+                                font-weight: 600;
+                            }
+
+                            @media screen and (max-width:500px) {
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+
+                            @media screen and (max-width:400px) {
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
                         }
 
                         &:hover {
@@ -127,7 +149,23 @@
                     li {
                         a {
                             img {
-                                padding: 4px;
+                                width: 70px;
+                                height: 70px;
+                                padding: 10px;
+                                @media screen and (max-width:700px) {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                                @media screen and (max-width:500px) {
+                                    width: 30px;
+                                    height: 30px;
+                                    padding: 5px;
+                                }
+                                @media screen and (max-width:400px) {
+                                    width: 20px;
+                                    height: 20px;
+                                    padding: 2px;
+                                }
                             }
 
                             &:hover img {
